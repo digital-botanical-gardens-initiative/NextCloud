@@ -27,5 +27,3 @@ services:
       - nextcloud_data:/docker
     depends_on:
       - db
-
-volumes:
