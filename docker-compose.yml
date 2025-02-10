@@ -1,4 +1,17 @@
 services:
+  db:
+    image: mariadb:latest
+    container_name: nextcloud_db
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --log-bin=binlog
+    volumes:
+      - ${MYSQL_VOLUME}:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
   app:
     image: nextcloud:latest
     container_name: nextcloud_app
@@ -16,6 +29,6 @@ services:
       OVERWRITE_PROTOCOL: "https"
       TRUSTED_PROXIES: "134.21.85.124"
     volumes:
-      - ${NEXTCLOUD_VOLUME}:/var/www/html/
+      - ${NEXTCLOUD_VOLUME}:/var/wwww/html/
     depends_on:
       - db
