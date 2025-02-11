@@ -23,5 +23,8 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ${NEXTCLOUD_DATA}:/var/www/html/data
+      - ${NEXTCLOUD_CONFIG}:/var/www/html
     depends_on:
       - db
