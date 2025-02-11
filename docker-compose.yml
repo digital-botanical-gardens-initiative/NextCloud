@@ -30,6 +30,6 @@ services:
       TRUSTED_PROXIES: 134.21.85.124
       FORWARDED_FOR_HEADERS: HTTP_X_FORWARDED_FOR
     volumes:
-      - ${NEXTCLOUD_VOLUME}:/var/wwww/html/
+      - ${NEXTCLOUD_VOLUME}:/var/www/html
     depends_on:
       - db
