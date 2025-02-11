@@ -27,7 +27,7 @@ services:
       OVERWRITE_CLI_URL: https://emi-collection.unifr.ch/nextcloud
       OVERWRITE_HOST: emi-collection.unifr.ch/nextcloud
       OVERWRITE_PROTOCOL: https
-      TRUSTED_PROXIES: 134.21.85.124
+      #TRUSTED_PROXIES: 134.21.85.124
       #FORWARDED_FOR_HEADERS: HTTP_X_FORWARDED_FOR
     volumes:
       - ${NEXTCLOUD_VOLUME}:/var/wwww/html/
