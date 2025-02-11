@@ -24,7 +24,7 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      OVERWRITE_CLI_URL: https://emi-collection.unifr.ch/nextcloud
+      #OVERWRITE_CLI_URL: https://emi-collection.unifr.ch/nextcloud
       #OVERWRITE_HOST: emi-collection.unifr.ch/nextcloud
       #OVERWRITE_PROTOCOL: https
       TRUSTED_PROXIES: 134.21.85.124
