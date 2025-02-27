@@ -14,7 +14,7 @@ Before you begin, make sure you have the following prerequisites installed:
 ### 1. Clone the repository to your local machine:
 
 ```bash
-git https://github.com/digital-botanical-gardens-initiative/NextCloud.git
+git clone https://github.com/digital-botanical-gardens-initiative/NextCloud.git
 cd NextCloud
 ```
 
